@@ -150,7 +150,7 @@ export default class Message extends React.Component<IMessageProps, IMessageStat
                                     <ReCAPTCHA
                                         ref={this.recaptchaRef}
                                         className="recaptcha"
-                                        sitekey="6LeVxnAUAAAAAMQKCa31q1Ar1dVgiTe9A3VyG8Bv"
+                                        sitekey="6LeYsHEUAAAAAIXUWy6PrQJOHHWRtN1_CJKWaRRD"
                                         onChange={this.captchaSuccess}
                                         onErrored={this.captchaFailure}
                                         onExpired={this.captchaFailure}
