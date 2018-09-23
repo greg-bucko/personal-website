@@ -1,0 +1,533 @@
+@import "~react-vertical-timeline-component/style.min.css";
+@import '~react-redux-toastr/src/styles/index';
+
+$primary1: #1b242f;
+$primary2: #252934;
+$contrast1: #ffffff;
+$contrast2: #e0e0e0;
+$accent1: #4285f4;
+$accent2: #ce0303;
+
+$padding-top: 105px;
+
+#app {
+	.redux-toastr {
+		.top-right {
+		    width: 500px;
+			top: 20px;
+
+			@media all and (max-width: 480px) {
+				width: 336px;
+			}
+
+		    .rrt-info {
+				background-color: $accent1;
+			}
+
+		    .rrt-error {
+				background-color: $accent2;
+
+				.rrt-progress-container {
+					.rrt-progressbar {
+						background-color: #ab0101;
+					}
+				}
+			}
+
+			.toastr {
+				border-radius: 0px;
+				opacity: 1;
+				box-shadow: none;
+
+				> div {
+					display: flex;
+
+					.rrt-left-container {
+						position: relative;
+
+						.rrt-holder {
+						    margin-top: -30px;
+                            left: 0px;
+						}
+					}
+
+					.rrt-middle-container {
+                        font-family: "Merriweather Sans", sans-serif;
+                        font-size: 13px;
+                        text-align: center;
+                        flex: 1;
+                        margin: 0;
+                    }
+
+                    .rrt-right-container {
+                        width: 80px;
+
+                        .close-toastr {
+                            width: 80px;
+                        }
+                    }
+				}
+			}
+		}
+	}
+	.navigation {
+		.app-bar {
+			box-shadow: none;
+            background: $primary1;
+            border-bottom: 4px solid $accent1;
+
+            .fill {
+                flex-grow: 1;
+            }
+
+			@media all and (max-width: 839px) {
+				.button {
+					font-size: 0.875rem;
+				}
+			}
+
+			@media all and (max-width: 480px) {
+				.button {
+					font-size: 0.5rem;
+					min-width: 10px;
+				}
+			}
+		}
+
+
+	}
+
+	.timeline {
+		.vertical-timeline {
+    		font-family: "Merriweather Sans", sans-serif;
+    		box-sizing: content-box;
+
+			.vertical-timeline-element-icon {
+	            background-color: $contrast1;
+	        }
+    	}
+
+		.institution {
+			margin-bottom: 20px;
+		}
+
+		.title {
+			margin-bottom: 10px;
+
+			.avatar {
+				display: inline-block;
+
+				.icon-wrapper {
+				    display: flex;
+	                justify-content: center;
+	                align-items: center;
+	                height: 40px;
+	                width: 40px;
+
+                    .icon {
+                        position: absolute;
+                        z-index: 1;
+						width: 1em;
+                        height: 1em;
+                        fill: #fff;
+                    }
+
+	                .hexagon {
+						width: 40px;
+                        height: 40px;
+                        position: absolute;
+	                }
+				}
+			}
+
+			.text {
+                display: inline-block;
+                vertical-align: top;
+                line-height: 40px;
+                margin-bottom: 0;
+                margin-left: 10px;
+			}
+		}
+
+		.content {
+            margin-bottom: 20px;
+            margin-left: 50px;
+		}
+
+		@media all and (max-width: 839px) {
+			.content {
+				margin-left: 50px;
+			}
+		}
+
+		@media all and (max-width: 480px) {
+			.content {
+				margin-left: 0px;
+			}
+		}
+	}
+
+	.home {
+		background-color: $primary2;
+
+	    .canvas_wrapper {
+	        position: absolute;
+	        width: 100%;
+	        overflow: hidden;
+	        height: 100vh;
+
+	        .canvas {
+	            margin-left: -10%;
+	            margin-top: -10%;
+	        }
+	    }
+
+		.wrapper {
+	        display: flex;
+	        flex-direction: column;
+	        min-height: 100vh;
+
+			.fill {
+		        flex: 1;
+		        display: flex;
+		        z-index: 1;
+
+				.grid {
+					text-align: center;
+
+					.text {
+						color: $contrast1;
+					}
+
+					.highlight {
+                        color: $accent2;
+                    }
+
+					@media all and (max-width: 839px) {
+						.text {
+							font-size: 2.0rem;
+						}
+					}
+
+					@media all and (max-width: 480px) {
+						.text {
+							font-size: 1.0rem;
+						}
+					}
+
+
+				}
+			}
+	    }
+	}
+
+	.about {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        padding-top: $padding-top;
+        background-color: $contrast1;
+
+        .page-title {
+            color: $primary1;
+        }
+
+		.info-wrapper {
+	        flex: 1;
+	        display: flex;
+	        z-index: 1;
+			padding: 20px;
+
+			.card {
+				display: flex;
+				box-shadow: none;
+
+				.media {
+					height: 300px;
+                    width: 223px;
+				}
+
+				.content {
+					max-width: 507px;
+
+					.divider {
+						margin-bottom: 10px;
+						background-color: $accent1;
+					}
+				}
+			}
+		}
+
+		.passions-wrapper {
+	        padding: 20px 20px 60px 20px;
+
+	        .card {
+	            max-width: 345px;
+	            box-shadow: none;
+
+	            .header {
+	                text-align: center;
+	                padding: 0px;
+	            }
+
+				.icon-wrapper {
+				    display: flex;
+	                justify-content: center;
+	                align-items: center;
+	                height: 150px;
+
+                    .icon {
+                        position: absolute;
+                        z-index: 1;
+						width: 4em;
+                        height: 4em;
+                        fill: #fff;
+                    }
+
+	                .hexagon {
+						width: 125px;
+                        height: 125px;
+                        position: absolute;
+	                }
+				}
+	        }
+		}
+	}
+
+	.experience {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        padding-top: $padding-top;
+        background-color: $contrast2;
+
+        .page-title {
+            color: $primary1;
+        }
+
+		.vertical-timeline::before {
+			background: $accent2;
+		}
+
+		.vertical-timeline {
+			.vertical-timeline-element-icon {
+				box-shadow: 0 0 0 4px $accent2;
+				color: $accent2;
+		    }
+
+			.vertical-timeline-element-content {
+				box-shadow: none;
+
+				.role {
+					.title {
+						.text {
+							color: $primary1;
+							max-width: 410px;
+						}
+
+						@media all and (max-width: 839px) {
+							.text {
+								max-width: 580px;
+							}
+						}
+						@media all and (max-width: 480px) {
+							.text {
+								max-width: 160px;
+							}
+						}
+					}
+				}
+
+				.skills {
+					.title {
+						.text {
+							color: $primary1;
+						}
+					}
+
+					.content {
+						.chip {
+							.avatar {
+								color: $primary1;
+								background-color: $contrast1;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.education {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        padding-top: $padding-top;
+		background-color: $contrast2;
+
+		.page-title {
+            color: $primary1;
+        }
+
+		.vertical-timeline::before {
+			background: $accent1;
+		}
+
+		.vertical-timeline {
+			.vertical-timeline-element-icon {
+				box-shadow: 0 0 0 4px $accent1;
+				color: $accent1;
+		    }
+
+			.vertical-timeline-element-content {
+				box-shadow: none;
+
+				.role {
+					.title {
+						.text {
+							color: $primary1;
+							max-width: 410px;
+						}
+
+						@media all and (max-width: 839px) {
+							.text {
+								max-width: 580px;
+							}
+						}
+						@media all and (max-width: 480px) {
+							.text {
+								max-width: 160px;
+							}
+						}
+					}
+				}
+
+				.skills {
+					.title {
+						.text {
+							color: $primary1;
+						}
+					}
+
+					.content {
+						.chip {
+							.avatar {
+								color: $primary1;
+								background-color: $contrast1;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.contact {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        padding-top: $padding-top;
+        background-color: $contrast1;
+
+        .page-title {
+            color: $primary1;
+        }
+
+		.message {
+	        flex: 1;
+	        display: flex;
+	        z-index: 1;
+
+	        .card {
+	            max-width: 600px;
+	            box-shadow: none;
+
+                .header {
+                    text-align: center;
+                    padding: 0px;
+                }
+
+				.icon-wrapper {
+				    display: flex;
+	                justify-content: center;
+	                align-items: center;
+					height: 175px;
+
+                    .icon {
+                        position: absolute;
+                        z-index: 1;
+                        fill: #fff;
+                        width: 4em;
+                        height: 4em;
+                    }
+
+	                .hexagon {
+                        position: absolute;
+                        width: 150px;
+                        height: 150px;
+	                }
+
+					@media all and (max-width: 839px) {
+						height: 150px;
+
+                        .icon {
+                            width: 3em;
+                            height: 3em;
+                        }
+
+		                .hexagon {
+							width: 125px;
+	                        height: 125px;
+		                }
+					}
+					@media all and (max-width: 480px) {
+						height: 125px;
+
+                        .icon {
+                            width: 2em;
+                            height: 2em;
+                        }
+
+		                .hexagon {
+							width: 100px;
+	                        height: 100px;
+		                }
+					}
+				}
+
+				.content {
+					.recaptcha {
+					    display: flex;
+                        justify-content: center;
+                        padding-top: 20px;
+					}
+				}
+
+	            .actions {
+	                justify-content: center;
+	            }
+	        }
+		}
+
+		.footer {
+		    padding: 20px;
+		    background-color: $primary1;
+
+			.author {
+				color: $contrast1;
+				text-align: center;
+			}
+
+		    .icons-copyright {
+		        color: $contrast1;
+		        font-size: 10px;
+				text-align: center;
+
+			    a {
+			        color: $contrast1;
+					text-decoration: none;
+			    }
+		    }
+		}
+	}
+}

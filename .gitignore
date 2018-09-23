@@ -1,0 +1,15 @@
+logs
+target
+build
+node_modules
+/.idea
+/.idea_modules
+/.classpath
+/.project
+/.settings
+/.gradle
+/RUNNING_PID
+/.iml
+/package-lock.json
+package
+package.zip
