@@ -1,7 +1,10 @@
 
 # Personal Website - Greg Bucko
 
-This is a starter application that shows how Play works.  Please see the documentation at https://www.playframework.com/documentation/latest/Home for more details.
+This repository contains code of my personal website. It was built using Typescript, React and Redux for the 
+fronend, Play Framework for the backend and Webpack as the compiler.
+
+You can see it in action at http://www.gregbucko.com
 
 ## Running
 
