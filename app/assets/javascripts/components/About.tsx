@@ -28,12 +28,12 @@ export default class About extends React.Component<{}> {
                             description="My passion for computers started since I was 6 when my father bought my first
                             ever PC. Since then I have found out that my passion for technology is ever growing and led
                             me to start my journey with a Physics with Technological Physics degree from The University
-                            of Manchester. The degree gave me opportunity to learn about a range of technologies such as
-                            electronics, programming, photonics any many more. Once my degree was over I have chosen
-                            software development as my career path as it was always once of the subjects I enjoyed the
+                            of Manchester. The degree gave me an opportunity to learn about a range of technologies such
+                            as electronics, programming, photonics any many more. Once my degree was over I have chosen
+                            software development as my career path as it was always one of the subjects I enjoyed the
                             most. Now I am a software architect working in the technology industry for over 6 years. I
                             have been involved in multiple enterprise level software projects at various positions
-                            such as software developer, scrum master, lead developer to team leader. I am also a
+                            such as software developer, scrum master, lead developer and team leader. I am also a
                             co-founder of InvisibleGearz project which aims to provide a platform for building scalable
                             applications."
                         />
@@ -46,9 +46,8 @@ export default class About extends React.Component<{}> {
                                 icon={<ReactSVG src="assets/icons/boxing.svg" className="icon"/>}
                                 title="Muay Thai"
                                 description="I have started my adventure with martial arts since childhood. It was
-                                always a great way to stay fit, learn self discipline and overcome challenges that
-                                it presents. Thai boxing thought me how to remain calm and strengthened me
-                                mentally."
+                                always a great way to stay fit, learn self discipline and overcome challenges. Thai
+                                boxing taught me how to remain calm and strengthened me mentally."
                             />
                         </Grid>
                         <Grid item={true}>
@@ -57,8 +56,8 @@ export default class About extends React.Component<{}> {
                                 title="Music production"
                                 description="Music has been a part of my life since I can remember. I have always
                                 been fascinated by the infinite possibilities of sound creation and arrangement.
-                                This has led me to start my journey with music production, predominantly electronic
-                                music."
+                                This has led me to start my journey with music production, predominantly in electronic
+                                music genre."
                             />
                         </Grid>
                         <Grid item={true}>
@@ -77,7 +76,7 @@ export default class About extends React.Component<{}> {
                                 title="Artificial Intelligence"
                                 description="I was always a big fan of Sci-Fi movies and the prospect of Artificial
                                 Intelligence. In fact if not for my amazing Physics teacher in college I would have
-                                enrolled for AI course at university instead. I believe that it will be the future
+                                enrolled for AI course at the university instead. I believe that it will be the future
                                 of humanity and I plan to be a part of building it."
                             />
                         </Grid>

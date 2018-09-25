@@ -2,6 +2,7 @@ logs
 target
 build
 node_modules
+package
 /.idea
 /.idea_modules
 /.classpath
@@ -11,5 +12,5 @@ node_modules
 /RUNNING_PID
 /.iml
 /package-lock.json
-package
-package.zip
+/package.zip
+/personal-website.iml
